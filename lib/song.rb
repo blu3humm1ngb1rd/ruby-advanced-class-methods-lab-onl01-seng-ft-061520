@@ -60,8 +60,8 @@ class Song
   # regex: regular expressions, ex. phone number ; looks for specific symbols and exclude // 
   
   def self.create_from_filename(mp3_file)
-    # hint: gsub : takes two arguments, one to remove, one to replace 
-    song = self.create  
+    #### hint: gsub : takes two arguments, one to remove, one to replace 
+    song = self.create 
     
     song_split = mp3_file.split(" - ")
     song.artist_name = song_split[0] 
